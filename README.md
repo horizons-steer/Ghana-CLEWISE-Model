@@ -4,7 +4,7 @@
 
 This repository holds the CLEWISE-Ghana model, the datasets behind it, model input and output files, and supporting documentation. It is the first integrated, all-sector model of its kind developed for Ghana, and it is built to be used as a development-planning tool rather than an emissions calculator.
 
-Developed at the **STEER Centre, Loughborough University**, in co-creation with Ghanaian national institutions.
+Developed at the **STEER Centre, Loughborough University**.
 
 ---
 
@@ -13,15 +13,10 @@ Developed at the **STEER Centre, Loughborough University**, in co-creation with 
 - [Overview](#overview)
 - [What CLEWISE adds](#what-clewise-adds)
 - [Model architecture](#model-architecture)
-- [Scenarios](#scenarios)
-- [The cost–benefit framework](#the-costbenefit-framework)
-- [Headline results](#headline-results)
 - [The dataset](#the-dataset)
-- [Repository structure](#repository-structure)
 - [Getting started](#getting-started)
 - [Data sources and co-creation](#data-sources-and-co-creation)
 - [Limitations](#limitations)
-- [Citation](#citation)
 - [Authors, funding and licence](#authors-funding-and-licence)
 
 ---
@@ -62,7 +57,7 @@ The established **CLEWs** framework (Climate, Land, Energy and Water systems) ha
 
 ## Model architecture
 
-The model is built in **OSeMOSYS** (Open Source Energy Modelling System) using the **Model User Interface (MUI) v5.5** — a cost-free, bottom-up, linear cost-optimisation environment widely applied to national energy and climate planning.
+The model is built in **OSeMOSYS** (Open Source Energy Modelling System) using the **Model User Interface (MUI) v5.6** — a cost-free, bottom-up, linear cost-optimisation environment widely applied to national energy and climate planning.
 
 OSeMOSYS identifies the least-cost combination of technologies and investments that meets exogenously defined demands over a given horizon, subject to technical, resource and policy constraints. Each technology is represented through input/output activity ratios and techno-economic parameters — capital, fixed and variable costs, capacity factors, and operational lifetimes.
 
@@ -70,7 +65,7 @@ OSeMOSYS identifies the least-cost combination of technologies and investments t
 
 | Parameter | Value |
 |---|---|
-| **Modelling framework** | OSeMOSYS, via Model User Interface (MUI) v5.5 |
+| **Modelling framework** | OSeMOSYS, via Model User Interface (MUI) v5.6 |
 | **Horizon** | 2020–2056 (2056 precedes Ghana's centenary of independence) |
 | **Temporal resolution** | 8 time slices — 2 seasons × 4 daily periods |
 | **Seasons** | Dry (November–March), wet (April–October) |
@@ -101,125 +96,6 @@ The model represents resource flows between systems explicitly, which is the poi
 
 ---
 
-## Scenarios
-
-Three pathways are compared to 2056.
-
-### Business-as-usual (BAU)
-
-The least-cost reference case. Continues historical trends in energy, land and water use with no additional emissions constraint.
-
-### Nationally Determined Contribution (NDC)
-
-Implements Ghana's stated commitments:
-
-- 15% reduction in CO₂eq emissions by 2030 relative to baseline
-- Scaled-up renewable capacity — utility-scale and mini-grid solar, small hydropower, wind
-- Introduction of nuclear power from 2040
-- Public-transport share of trips rising from 64% to 74% by 2030
-- Reforestation of approximately 10,000 ha of degraded land per year
-
-### Net zero (NZ)
-
-Builds on the baseline with an emissions limit declining to net-zero CO₂-equivalent emissions by 2056:
-
-- Higher penetration of renewables and nuclear
-- Public-transport share rising to approximately 80%
-- Widespread replacement of biomass cooking with electric and improved stoves
-- Advanced waste treatment infrastructure
-
----
-
-## The cost–benefit framework
-
-The analytical core is a discounted cost–benefit account comparing each alternative pathway against BAU. For each pathway, the net economic benefit (NEB) is:
-
-```
-NEB = PV(operating-cost savings)
-    + PV(avoided externalities)
-    − PV(additional capital investment)
-```
-
-Where operating-cost savings are BAU operating and fuel costs minus those of the pathway; avoided externalities are the valued development co-benefits; and additional capital is the pathway's capital minus BAU. All streams are annual values over 2020–2056, expressed as present values at a real discount rate of 5%. A positive NEB means the savings and avoided damages of a pathway outweigh its additional investment.
-
-The same accounting is applied sector by sector, so the contribution of power, transport, industry, buildings, agriculture and land, water and waste can each be identified.
-
-### Co-benefit module
-
-Capital and operating cost streams come directly from OSeMOSYS outputs. Avoided externalities are valued with a dedicated module covering six categories:
-
-| Category | Valuation basis |
-|---|---|
-| Indoor air pollution (IAP) | WHO BAR-HAP burden estimates for Ghana; VSL of USD 85,000 |
-| Local / ambient air pollution (LAP) | WHO BAR-HAP; IMF valuation data |
-| Sanitation | National estimates |
-| Solid waste management | National estimates |
-| Transport congestion | National estimates |
-| Transport accidents | National estimates |
-
----
-
-## Headline results
-
-> Figures are discounted to 2026 at a 5% real rate unless otherwise stated.
-
-### The economic case
-
-The net-zero pathway delivers a **net economic benefit of USD 59.2 billion by 2056** relative to BAU. The operating-cost savings and avoided externalities it generates outweigh the additional capital it requires.
-
-| Component (NZ vs BAU) | Present value |
-|---|---|
-| Additional capital investment | −USD 178 billion |
-| Operating-cost savings | +USD 129 billion |
-| Avoided externality costs | +USD 108 billion |
-| **Net economic benefit** | **+USD 59.2 billion** |
-
-The NDC pathway also returns a positive but smaller net benefit of **USD 24.8 billion**, reflecting its more modest ambition.
-
-Decarbonisation in Ghana is therefore not a net economic burden but a net economic gain, once fuel savings and avoided health and congestion damages are counted. The net benefit is unevenly distributed: the largest gains accrue in **transport, health and environment**, driven by fuel and operating savings and by avoided air-pollution damages from cleaner cooking.
-
-Development co-benefits of the NZ pathway alone are equivalent to roughly **4.7% of Ghana's GDP by 2056**, before operating-cost savings are added.
-
-### Investment requirements
-
-Total investment over 2026–2056:
-
-| Scenario | Total investment | Additional vs BAU |
-|---|---|---|
-| BAU | USD 237.8 billion | — |
-| NDC | USD 256.1 billion | USD 18.3 billion |
-| NZ | USD 415.9 billion | USD 178 billion |
-
-Transport accounts for the largest share across all scenarios. Additional NZ investment concentrates in power and transport, reflecting large-scale low-carbon generation, electric mobility, expanded public transport and advanced waste treatment.
-
-### Emissions
-
-Total GHG emissions are approximately 52 MtCO₂eq today.
-
-| Scenario | Emissions by 2056 |
-|---|---|
-| BAU | ~169 MtCO₂eq |
-| NDC | ~118 MtCO₂eq |
-| NZ | Net zero CO₂eq |
-
-Because hard-to-abate emissions in transport and industry remain positive at 2056, the NZ balance is achieved by offsetting residuals with land-use carbon sinks. Under NZ, total land-use emission savings reach about 57 MtCO₂eq relative to baseline.
-
-### Sectoral transformation
-
-**Power.** Generation rises from 78 PJ in 2020 to approximately 400 PJ (BAU), 410 PJ (NDC) and 712 PJ (NZ) by 2056. Installed capacity expands from 5.67 GW to about 28.5 GW under BAU, which remains dominated by natural gas (over 80% by 2056). From 2045 the NZ scenario is dominated by large and medium hydropower, nuclear, on- and off-grid solar PV and wind; nuclear contributes about 511 PJ, nearly 72% of total generation.
-
-**Buildings.** Total fuel consumption was 146 PJ in 2022, with biomass at 74%, electricity 19.1% and LPG 7%. Residential demand is projected to reach 245 PJ and commercial 62 PJ by 2055. Alternative pathways shift cooking and low-temperature heating from biomass to electricity.
-
-**Industry.** Fuel demand rises from roughly 54 PJ in 2020 to about 316 PJ by 2056 under BAU. Under NZ, natural gas for high-temperature heating falls from about 141 PJ to roughly 17 PJ, and biomass for low-temperature heating from about 54 PJ to near zero. Cement production, about 6.7 Mt in 2020, roughly doubles by 2055; aluminium nearly triples, from 37.6 kt to about 105 kt.
-
-**Transport.** Under BAU, car demand rises from about 37.5 to 251.8 billion passenger-km between 2022 and 2056, with the fleet expanding from roughly 1.7 to 10.5 million vehicles. Transport energy demand climbs from 132 PJ to 464 PJ. Under NZ, strong electrification from around 2035 raises transport electricity demand from under 0.1 PJ in 2020 to about 102 PJ by 2056.
-
-**Water.** Agricultural demand rises from about 0.74 billion m³ (2022) to 3.1 billion m³ (2056); public supply from 0.41 to about 1.2 billion m³. Power-sector cooling water is eliminated under NZ from 2050 with the phase-out of thermal generation — a direct cross-sectoral synergy that single-sector analysis would miss.
-
-**Waste.** Solid waste generation grows from 8.64 Mt (2022) to about 32 Mt (2056) under BAU. A shift to digesters and advanced treatment under NZ cuts solid- and liquid-waste emissions to about 3.5 and 5 MtCO₂eq respectively by 2056.
-
----
-
 ## The dataset
 
 The model is underpinned by an open, techno-economic dataset compiled specifically for Ghana. It is organised as an Excel workbook for transparency and ease of use, and adheres to the **U4RIA principles** — Ubuntu, Retrievability, Repeatability, Reconstructability, Interoperability and Auditability.
@@ -247,39 +123,13 @@ Although designed for OSeMOSYS, its MUI, and the Data-to-Deal (D2D) framework, t
 - Can inform national investment needs in key technologies and infrastructure, following the Data-to-Deal approach
 - Helps development partners and private investors identify viable, high-impact opportunities aligned with Ghana's long-term sustainability goals
 
----
-
-## Repository structure
-
-```
-.
-├── model/                  OSeMOSYS model files (CLEWISE-Ghana)
-├── data/
-│   ├── raw/                Source data as received from institutions
-│   └── processed/          Cleaned, unit-harmonised model inputs
-├── results/                Scenario outputs (BAU, NDC, NZ)
-├── co-benefits/            Co-benefit assessment module and inputs
-├── docs/                   Methodology, data sources, assumptions
-└── README.md
-```
-
----
-
 ## Getting started
 
 ### Requirements
 
 - **OSeMOSYS** — [github.com/OSeMOSYS/OSeMOSYS](https://github.com/OSeMOSYS/OSeMOSYS)
-- **Model User Interface (MUI)** v5.5 or later — [github.com/OSeMOSYS/MUIO](https://github.com/OSeMOSYS/MUIO)
+- **Model User Interface (MUI)** v5.6 or later — [github.com/OSeMOSYS/MUIO](https://github.com/OSeMOSYS/MUIO)
 - A linear programming solver (GLPK, CBC, CPLEX or Gurobi)
-
-### Running the model
-
-1. Install OSeMOSYS and the MUI following their respective documentation.
-2. Load the model file from `model/` into the MUI.
-3. Select a scenario configuration from `model/scenarios/`.
-4. Run the optimisation. Runtime depends on solver and hardware.
-5. Outputs are written in the standard OSeMOSYS results format; reference outputs for comparison are in `results/`.
 
 ### Using the data independently
 
@@ -316,20 +166,6 @@ All collected data were processed to align with the modelling framework's requir
 **Priorities for refinement.** Better country-specific data is most needed on end-use energy consumption by activity, vehicle fleet composition and usage, livestock emission factors, and solid-waste generation and treatment.
 
 **Scope for extension.** Future work could integrate green hydrogen production and use, fertiliser production and use in agriculture, and additional externalities including ecosystem services, biodiversity, nutrition, active mobility, employment creation and socio-economic resilience.
-
----
-
-## Citation
-
-If you use this model or dataset, please cite:
-
-> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. *The economic case for net zero in Ghana: an integrated CLEWISE assessment of investment needs, operating savings and development benefits.*
-
-> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. *Integrated System Analysis in Developing Countries: A Techno-economic Dataset for Climate, Land, Energy, and Water system (CLEWs) modelling in Ghana.* Data in Brief.
-
-A `CITATION.cff` file is provided in the repository root.
-
----
 
 ## Authors, funding and licence
 
