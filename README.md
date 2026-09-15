@@ -8,19 +8,6 @@ Developed at the **STEER Centre, Loughborough University**.
 
 ---
 
-## Contents
-
-- [Overview](#overview)
-- [What CLEWISE adds](#what-clewise-adds)
-- [Model architecture](#model-architecture)
-- [The dataset](#the-dataset)
-- [Getting started](#getting-started)
-- [Data sources and co-creation](#data-sources-and-co-creation)
-- [Limitations](#limitations)
-- [Authors, funding and licence](#authors-funding-and-licence)
-
----
-
 ## Overview
 
 Developing countries face a twin challenge: expanding access to energy, water, food and mobility while aligning national development with global climate goals. These services are delivered through tightly coupled systems. Decisions about energy infrastructure reshape land use, water demand and emissions; choices in agriculture and water management feed back into energy needs and food security. Climate change intensifies these couplings, which makes sector-by-sector planning increasingly inadequate for long-term decisions.
@@ -166,28 +153,6 @@ All collected data were processed to align with the modelling framework's requir
 **Priorities for refinement.** Better country-specific data is most needed on end-use energy consumption by activity, vehicle fleet composition and usage, livestock emission factors, and solid-waste generation and treatment.
 
 **Scope for extension.** Future work could integrate green hydrogen production and use, fertiliser production and use in agriculture, and additional externalities including ecosystem services, biodiversity, nutrition, active mobility, employment creation and socio-economic resilience.
-
-## Authors, funding and licence
-
-**Authors**
-
-Romain Akpahou, Thomas Alfstad, Jairo Quirós-Tortós
-
-STEER Centre, Department of Geography, Loughborough University, Loughborough LE11 3TU, United Kingdom
-
-**Corresponding author:** Jairo Quirós-Tortós — j.quiros@lboro.ac.uk
-
-**Funding**
-
-The CLEWISE assessment was funded by the European Climate Foundation through the 2050 Pathways Platform. Dataset development was funded by the UK Government Foreign, Commonwealth and Development Office and co-funded by Climate Compatible Growth (CCG), a programme bringing together leading research organisations and led from the STEER Centre, Loughborough University. The views expressed here do not necessarily reflect the official policies of the funders.
-
-**Declaration of competing interests**
-
-The authors declare no competing financial interests or personal relationships that could have influenced the work reported here.
-
-**Licence**
-
-See `LICENSE` in the repository root.
 
 ---
 
