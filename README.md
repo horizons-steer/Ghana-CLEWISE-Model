@@ -1,6 +1,6 @@
 # Ghana CLEWISE Model
 
-**An integrated model of Ghana's climate, land, energy, water, waste and industry systems, accounting for all IPCC sectoral emissions.**
+**An integrated model of Ghana's Climate, Land, Energy, Water, Waste and Industry systems, accounting for all IPCC Sectoral Emissions (CLEWISE).**
 
 This repository holds the CLEWISE-Ghana model, the datasets behind it, model input and output files, and supporting documentation. It is the first integrated, all-sector model of its kind developed for Ghana, and it is built to be used as a development-planning tool rather than an emissions calculator.
 
