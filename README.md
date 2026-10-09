@@ -155,5 +155,26 @@ All collected data were processed to align with the modelling framework's requir
 **Scope for extension.** Future work could integrate green hydrogen production and use, fertiliser production and use in agriculture, and additional externalities including ecosystem services, biodiversity, nutrition, active mobility, employment creation and socio-economic resilience.
 
 ---
+## Citation
+If you use this model or its underlying dataset in your work, please cite the repository and the accompanying publications.
+Repository
+> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. (2026). *Ghana CLEWISE Model: an integrated model of Ghana's climate, land, energy, water, waste and industry systems* [Software and data]. STEER Centre, Loughborough University. Available at: https://github.com/horizons-steer
+> 
+Publications
+> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. *The economic case for net zero in Ghana: an integrated CLEWISE assessment of investment needs, operating savings and development benefits.*
 
+> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. *Integrated System Analysis in Developing Countries: A Techno-economic Dataset for Climate, Land, Energy, and Water system (CLEWs) modelling in Ghana.* Data in Brief.
+
+A `CITATION.cff` file is included in the repository root, so GitHub displays a Cite this repository button on the repository page with ready-formatted APA and BibTeX entries.
+BibTeX
+```bibtex
+@software{akpahou_ghana_clewise_2026,
+  author    = {Akpahou, Romain and Alfstad, Thomas and Quir{\'o}s-Tort{\'o}s, Jairo},
+  title     = {Ghana {CLEWISE} Model: an integrated model of Ghana's
+               climate, land, energy, water, waste and industry systems},
+  year      = {2026},
+  publisher = {STEER Centre, Loughborough University},
+  url       = {https://github.com/horizons-steer}
+}
+```
 *The CLEWISE framework and its net-economic-benefit accounting are transferable. They can be applied wherever integrated, development-oriented decarbonisation planning is needed, providing a consistent way to compare the costs, savings and co-benefits of alternative pathways across sectors and countries.*
