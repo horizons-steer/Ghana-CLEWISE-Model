@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: "If you use this model or its underlying dataset, please cite them as below."
+type: software
+title: "Ghana CLEWISE Model: an integrated model of Ghana's Climate, Land, Energy, Water, Waste, and Industry for all Sectoral Emissions (CLEWISE)"
+abstract: >-
+  An integrated model of Ghana's Climate, Land, Energy, Water, Waste, and
+  Industry for all Sectoral Emissions (CLEWISE). Built in
+  OSeMOSYS and underpinned by an open techno-economic dataset compiled with
+  Ghanaian national institutions. Includes the model files, source datasheets,
+  model inputs, outputs and supporting documentation.
+authors:
+  - family-names: Akpahou
+    given-names: Romain
+    affiliation: "STEER Centre, Department of Geography, Loughborough University"
+    orcid: "https://orcid.org/0000-0001-6534-0151"
+  - family-names: Alfstad
+    given-names: Thomas
+    affiliation: "STEER Centre, Department of Geography, Loughborough University"
+  - family-names: Quirós-Tortós
+    given-names: Jairo
+    affiliation: "STEER Centre, Department of Geography, Loughborough University"
+    email: j.quiros@lboro.ac.uk
+    orcid: "https://orcid.org/0000-0002-3329-8910"
+version: 1.0.0
+date-released: "2026-11-09"
+license: CC-BY-4.0
+repository-code: "https://github.com/horizons-steer"
+keywords:
+  - CLEWs
+  - CLEWISE
+  - OSeMOSYS
+  - Ghana
+  - energy modelling
+  - climate policy
+  - land-energy-water nexus
+  - integrated assessment
+references:
+  - type: data
+    title: "A Techno-economic Dataset for Climate, Land, Energy, Water, Waste, and Industry for all Sectoral Emissions (CLEWISE) modelling in Ghana"
+    authors:
+      - family-names: Akpahou
+        given-names: Romain
+        orcid: "https://orcid.org/0000-0001-6534-0151"
+      - family-names: Alfstad
+        given-names: Thomas
+      - family-names: Quirós-Tortós
+        given-names: Jairo
+        orcid: "https://orcid.org/0000-0002-3329-8910"
+    year: 2026
+    publisher:
+      name: Zenodo
+    version: "v1"
+    doi: "10.5281/zenodo.23984466"
+    url: "https://doi.org/10.5281/zenodo.23984466"
+    license: CC-BY-4.0
