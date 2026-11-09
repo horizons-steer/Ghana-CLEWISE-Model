@@ -135,18 +135,6 @@ Although designed for OSeMOSYS, its MUI, and the Data-to-Deal (D2D) framework, t
 
 ## Getting started
 
-### Requirements
-
-- **OSeMOSYS** — [github.com/OSeMOSYS/OSeMOSYS](https://github.com/OSeMOSYS/OSeMOSYS)
-- **Model User Interface (MUI)** v5.6 or later — [github.com/OSeMOSYS/MUIO](https://github.com/OSeMOSYS/MUIO)
-- A linear programming solver (GLPK, CBC, CPLEX or Gurobi)
-
-### Using the data independently
-
-The dataset in `data/` is structured to be readable without OSeMOSYS. Each workbook sheet corresponds to a parameter set, with units and sources documented in `docs/`. Adaptation to other frameworks requires mapping the technology and commodity naming conventions, which are set out in `docs/`.
-
----
-
 ## Data sources and co-creation
 
 The dataset was compiled through a collaborative process involving national institutions, local consultants and sectoral stakeholders:
@@ -190,7 +178,7 @@ The dataset has a permanent DOI and should be cited directly:
 
 ### Repository
 
-> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. (2026). *Ghana CLEWISE Model: an integrated model of Ghana's Climate, Land, Energy, Water, Waste, and Industry for all Sectoral Emissions (CLEWISE)* [Software and data]. STEER Centre, Loughborough University. https://github.com/horizons-steer
+> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. (2026). *Ghana CLEWISE Model: an integrated model of Ghana's Climate, Land, Energy, Water, Waste, and Industry for all Sectoral Emissions (CLEWISE)* [Software and data]. STEER Centre, Loughborough University. https://github.com/horizons-steer/Ghana-CLEWISE-Model
 
 ### Publications
 
