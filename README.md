@@ -1,6 +1,9 @@
 # Ghana CLEWISE Model
 
-**An integrated model of Ghana's Climate, Land, Energy, Water, Waste and Industry systems, accounting for all IPCC Sectoral Emissions (CLEWISE).**
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23984466.svg)](https://doi.org/10.5281/zenodo.23984466)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+**An integrated model of Ghana's Climate, Land, Energy, Water, Waste, and Industry for all Sectoral Emissions (CLEWISE).**
 
 This repository holds the CLEWISE-Ghana model, the datasets behind it, model input and output files, and supporting documentation. It is the first integrated, all-sector model of its kind developed for Ghana, and it is built to be used as a development-planning tool rather than an emissions calculator.
 
@@ -33,7 +36,7 @@ The established **CLEWs** framework (Climate, Land, Energy and Water systems) ha
 
 **Second**, coverage of industrial processes and the full set of IPCC emitting sectors is often partial, even though industry and waste are central to both emissions and development outcomes in fast-growing economies.
 
-**CLEWISE** — *Climate, Land, Energy, Water and Waste, Industry, and Sectoral Emissions* — extends CLEWs in two ways:
+**CLEWISE** — *Climate, Land, Energy, Water, Waste, and Industry for all Sectoral Emissions* — extends CLEWs in two ways:
 
 | Extension | What it means |
 |---|---|
@@ -85,6 +88,24 @@ The model represents resource flows between systems explicitly, which is the poi
 
 ## The dataset
 
+### Published and archived on Zenodo
+
+The underlying dataset is published open access with a permanent DOI, so it can be cited and retrieved independently of this repository.
+
+| | |
+|---|---|
+| **Title** | A Techno-economic Dataset for Climate, Land, Energy, Water, Waste, and Industry for all Sectoral Emissions (CLEWISE) modelling in Ghana |
+| **DOI** | [10.5281/zenodo.23984466](https://doi.org/10.5281/zenodo.23984466) |
+| **Version** | v1, published 5 November 2026 |
+| **Licence** | Creative Commons Attribution 4.0 International (CC BY 4.0) |
+| **Community** | [Horizons STEER](https://zenodo.org/communities/horizons-lu/records) |
+
+The record contains the full techno-economic workbook (`Ghana_CLEWISE Techno-economic data updated.xlsx`) and the accompanying data descriptor. The dataset informed the design of Ghana's Long-Term Low Emission Development Strategy.
+
+**Use the DOI rather than this repository's URL when citing the data.** A DOI is permanent and resolves even if the repository is renamed, moved or archived, which is what journals expect in a data availability statement.
+
+### About the data
+
 The model is underpinned by an open, techno-economic dataset compiled specifically for Ghana. It is organised as an Excel workbook for transparency and ease of use, and adheres to the **U4RIA principles** — Ubuntu, Retrievability, Repeatability, Reconstructability, Interoperability and Auditability.
 
 Although designed for OSeMOSYS, its MUI, and the Data-to-Deal (D2D) framework, the dataset is an independent, openly accessible resource that can be adapted for other modelling frameworks.
@@ -109,6 +130,8 @@ Although designed for OSeMOSYS, its MUI, and the Data-to-Deal (D2D) framework, t
 - Addresses documented data gaps in the Ghanaian and wider Sub-Saharan African literature
 - Can inform national investment needs in key technologies and infrastructure, following the Data-to-Deal approach
 - Helps development partners and private investors identify viable, high-impact opportunities aligned with Ghana's long-term sustainability goals
+
+---
 
 ## Getting started
 
@@ -156,25 +179,53 @@ All collected data were processed to align with the modelling framework's requir
 
 ---
 ## Citation
-If you use this model or its underlying dataset in your work, please cite the repository and the accompanying publications.
-Repository
-> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. (2026). *Ghana CLEWISE Model: an integrated model of Ghana's climate, land, energy, water, waste and industry systems* [Software and data]. STEER Centre, Loughborough University. Available at: https://github.com/horizons-steer
-> 
-Publications
+
+If you use this model or its underlying dataset in your work, please cite them as follows.
+
+### Dataset
+
+The dataset has a permanent DOI and should be cited directly:
+
+> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. (2026). *A Techno-economic Dataset for Climate, Land, Energy, Water, Waste, and Industry for all Sectoral Emissions (CLEWISE) modelling in Ghana* (v1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.23984466
+
+### Repository
+
+> Akpahou, R., Alfstad, T., & Quirós-Tortós, J. (2026). *Ghana CLEWISE Model: an integrated model of Ghana's Climate, Land, Energy, Water, Waste, and Industry for all Sectoral Emissions (CLEWISE)* [Software and data]. STEER Centre, Loughborough University. https://github.com/horizons-steer
+
+### Publications
+
 > Akpahou, R., Alfstad, T., & Quirós-Tortós, J. *The economic case for net zero in Ghana: an integrated CLEWISE assessment of investment needs, operating savings and development benefits.*
 
 > Akpahou, R., Alfstad, T., & Quirós-Tortós, J. *Integrated System Analysis in Developing Countries: A Techno-economic Dataset for Climate, Land, Energy, and Water system (CLEWs) modelling in Ghana.* Data in Brief.
 
-A `CITATION.cff` file is included in the repository root, so GitHub displays a Cite this repository button on the repository page with ready-formatted APA and BibTeX entries.
-BibTeX
+A `CITATION.cff` file is included in the repository root, so GitHub displays a **Cite this repository** button on the repository page with ready-formatted APA and BibTeX entries.
+
+### BibTeX
+
 ```bibtex
+@dataset{akpahou_clewise_ghana_data_2026,
+  author    = {Akpahou, Romain and Alfstad, Thomas and Quir{\'o}s-Tort{\'o}s, Jairo},
+  title     = {A Techno-economic Dataset for Climate, Land, Energy, Water,
+               Waste, and Industry for all Sectoral Emissions ({CLEWISE})
+               modelling in Ghana},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {v1},
+  doi       = {10.5281/zenodo.23984466},
+  url       = {https://doi.org/10.5281/zenodo.23984466}
+}
+
 @software{akpahou_ghana_clewise_2026,
   author    = {Akpahou, Romain and Alfstad, Thomas and Quir{\'o}s-Tort{\'o}s, Jairo},
-  title     = {Ghana {CLEWISE} Model: an integrated model of Ghana's
-               climate, land, energy, water, waste and industry systems},
+  title     = {Ghana {CLEWISE} Model: an integrated model of Ghana's Climate,
+               Land, Energy, Water, Waste, and Industry for all Sectoral
+               Emissions ({CLEWISE})},
   year      = {2026},
   publisher = {STEER Centre, Loughborough University},
   url       = {https://github.com/horizons-steer}
 }
 ```
+
+---
+
 *The CLEWISE framework and its net-economic-benefit accounting are transferable. They can be applied wherever integrated, development-oriented decarbonisation planning is needed, providing a consistent way to compare the costs, savings and co-benefits of alternative pathways across sectors and countries.*
